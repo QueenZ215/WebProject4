@@ -6,27 +6,13 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: 'Alice', serif;
+}
+.site-header > * {
+    flex: 1;
 }
 nav {
     background-color: #3f94ca;
-}
-footer {
-    background-color: #3f94ca;
-}
-
-main {
-    padding: 1em;
-    border: 2px solid #000;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
-    max-width: 50em;
-    line-height: 1.3em;
-    margin: 0 auto;
-    margin-top: 4em;
-    font-family: 'Alice', serif;
-}
-h1 {
-    text-align: center;
-    font-size: xx-large;
 }
 .site-header, 
 .site-footer {
@@ -48,26 +34,63 @@ h1 {
     font-weight:bold;
     color: #fff;
 }
-.site-footer {
-    flex-direction: column;
+
+main {
+    padding: 1em;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    max-width: 50em;
+    line-height: 1.3em;
+    margin: 0 auto;
+    margin-top: 4em;
+    font-family: 'Alice', serif;
+}
+h1 {
     text-align: center;
+    font-size: xx-large;
 }
-.site-header > * {
-    flex: 1;
+main p {
+    text-align: left;
 }
+#first{ /* indent first paragraph of each page -ZC*/
+    text-indent: 4em ;
+
+}
+#active{ /* change color of active chapter -ZC*/
+    background-color: #06094a;
+    padding:1.1em;
+    margin:0;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+figure{
+    float: left;
+    padding:1em;
+}
+figure.rfloat {
+    float: right;
+}
+
+.white-space {
+    white-space: pre;       /* preserve spaces and line breaks -ZC*/
+    font-family: 'Alice', serif;
+}
+/*  Footer */
+footer {
+    background-color: #3f94ca;
+}
+
 .footer-nav {
     display: flex;
     justify-content: center;
     margin:0;   
 }
 
-#first{
-    text-indent: 4em ;
-
+.site-footer {
+    flex-direction: column;
+    text-align: center;
 }
-#active{
-    background-color: #06094a;
-    padding:1.1em;
-    margin:0;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+footer p{
+    font-size: smaller;
+    margin: 0;
 }
